@@ -1,0 +1,74 @@
+/* This  is referencing the body element in the HTML file to make sure that we are able to style it globally */
+/* setting the font for the document at 18 pixels with two type styles */
+/* also setting the background color to light grey */
+
+body {
+    font: 18px arial, sans-serif;
+    background: #eee;
+  }
+  
+  /* this is referencing the specific div tag with the id atrribute of animals and making sure that only this has a width of 70% of the document*/
+  
+  #animals {
+    width: 70%;
+  }
+  
+  /* this is making sure that the gifs that are returned from giphy with the class of animal-item be set with a padding of 10 pixels and make sure that they float left */
+  
+  .animal-item {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* All the element inside the form element like the label, the input and the submit button will float right with the remaining 30% of the document's width */
+  
+  form {
+    float: right;
+    width: 30%;
+    padding: 20px;
+  }
+  
+  /* This is saying  that  the text  in the label will be bold, have a margin at the bottom of its container so to not touch the input box */
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  /* this is one of the input tags and it specifically is targettiing the text input, making sure that it takes up 100% of its container, with a specific font size, and also including a margin between it and the follwoing input button below */
+  
+  input[type="text"] {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  /*This is targeting the submit button specifically */
+  /* Styling  it with padding to create the style of the button itself and includes some margin to leave space between it and other divs */
+  /* Background color is set as is the text color, there is not border but there are round edges by indluding (border-radius */
+  button,
+  input[type="submit"] {
+    padding: 5px 20px;
+    margin: 0 10px 10px 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    background: #659a98;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #bbb;
+  }
+  
+  /* for the same button above we have included  the :hover selector to select the element. When we mouse over the button it will change its background color*/
+  button:hover,
+  input[type="submit"]:hover {
+    background: #334e4d;
+  }
+  
+  /* for the same button above we have included  the .active selector to select the element. We use it to select and stye the active button and change its color*/
+  button.active {
+    background: #334e4d;
+  }
+  
