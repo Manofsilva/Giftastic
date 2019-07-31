@@ -1,0 +1,58 @@
+<!-- The Following is a Declaration in the HTML document about what version of HTML the page is written in. -->
+<!DOCTYPE html>
+<!--This is a Global attribute that specifies what language the content should be in the document -->
+<html lang="en">
+
+<!-- The head element is a container for all of the head elements that lie in between the head tags-->
+<head>
+  <!-- The meta describes the metadata within an HTML document. This specifically indicates to other Unicode Character Set and the encoding of how numbers are translated into a computer-->
+  <meta charset="UTF-8">
+  <!-- Title defines a title in the browser toolbar; provides a title for a webpage and displays a title for search engine results -->
+  <title>Animaltastic</title>
+  <!-- This tag defines a link between the HTML document to a CSS stylesheet by indicating what the relationship is with the new document, what type and also where the to locate the linked document-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- here we close the head tag to fully contain all these head elements -->
+</head>
+
+<!-- The following element contains all the contents of an HTML document-->
+<body>
+
+  <!-- The div element is being used to create a section in the HTML document to then enter data into; and we use an id attribute to uniquely name this section-->
+  <div id="animal-buttons">
+<!-- we then properly close the div element to contain our information -->
+  </div>
+
+  <!-- A form tag is used to create an HTML form for user input into the document and use the id attribute to uniquely name the element-->
+  <form id="animal-form">
+    <!--The label tag defines a label for a user input.  -->
+    <!--The for attribute specifies which form element a label is bound to.-->
+    <!--And we also are providing what the label should say by adding text. -->
+    <label for="animal-input">Add an animal</label>
+
+  <!--The input tag specifies an input field where a user can enter data-->
+  <!-- We specify that the  type  of input  element it is will involve including text by the  user -->
+  <!-- we give it a unique identifier -->
+  <!-- and include a break so to provide a space to the next input element -->
+    <input type="text" id="animal-input"><br>
+    <!-- The is another  input  element  with another unique identifier -->
+    <!-- It is s submit button that was created-->
+    <input id="add-animal" type="submit" value="Submit">
+    <!-- Here we properly close the  form tag -->
+  </form>
+
+  <!--The div element is being used to create a section in the HTML document to then enter data into; and we use an id attribute to uniquely name this section-->
+  <div id="animals">
+<!-- We properly close the the element -->
+  </div>
+
+  <!-- Here we are including a script tag to define a client-side script that points towards an external source which in this case it's for tthe jQuery CDN link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Here we are including a stript tag that points to another external source which happens to be our javascript file -->
+  <script src="app.js"></script>
+  
+  <!-- We close the body tag to fully contain the element in the document's body -->
+</body>
+
+<!-- We close the HTML tag -->
+</html>
