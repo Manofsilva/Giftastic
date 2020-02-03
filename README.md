@@ -8,8 +8,8 @@ Enter a word into the search box. As you enter words into the search box, button
 
 - Feel free to search any items that is of interest to you.
 
-Go ahead! Click on the following link to preview the completed assignment.
-https://bronzeowl.github.io/giftastic/
+### Go ahead! Click on the following link to preview the completed assignment.
+https://manofsilva.github.io/Giftastic/
 
 ### Built With
 - HTML5
